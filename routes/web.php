@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    Alert::success('Success Title', 'Success Message');
     return view('welcome');
 });
 
@@ -21,3 +24,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('dealers', 'DealersController');
+Route::resource('fixed', 'FixedController');
+
+
+Route::post('dealers/revoke','DealersController@revoke')->name('dealers.revoke');
+Route::post('fixed/revoke','FixedController@revoke')->name('dealers.revoke');

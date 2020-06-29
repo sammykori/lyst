@@ -9,7 +9,7 @@
             {!! Form::submit('Revoke Dealers Licence', ['class'=> 'd-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right']) !!} --}}
         {{-- <a href="{{url('dealers/create')}}" class="d-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right"><i class="fas fa-trash-alt fa-sm text-white-50"></i> Revoke Dealers Licence</a> --}}
         {{-- {!!Form::close()!!} --}}
-        <form method="POST" action="{{action('DealersController@revoke')}}">
+        <form method="POST" action="{{action('FixedController@revoke')}}">
             @csrf
             <input type="hidden" id="custId" name="dealId" value={{$deal->id}}>
             <input type="submit" value="Revoke Licence" class="d-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right"/>
@@ -20,7 +20,7 @@
             <div class="col-sm-1">
             </div>
             <div class="col-sm-10">
-                {!!Form::open(['action' => ['DealersController@update', $deal->id],'method' => 'PUT'])!!}
+                {!!Form::open(['action' => ['FixedController@update', $deal->id],'method' => 'PUT'])!!}
                     <div class="form-group row">
                         <div class="col-sm-10">
                         {!! Form::label('l_id', 'Licence ID') !!}
@@ -35,8 +35,8 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                        {!! Form::label('class', 'Class of Licence') !!}
-                        {{Form::select('class', ['A'=> 'Class A', 'B'=> 'Class B', 'C'=> 'Class C', 'D'=>'Class D'], $deal->class, ['placeholder' => 'Class '.$deal->class, 'class' => 'custom-select form-control'])}}
+                        {!! Form::label('class', 'Description') !!}
+                        {{Form::text('class', $deal->class, ['placeholder' => $deal->class, 'class' => 'form-control'])}}
                         </div>
                     </div>
                     <div class="form-group row">

@@ -65,7 +65,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">List of tables</h6>
                         <a class="collapse-item" href="{{ url('/dealers') }}">Dealership</a>
-                        <a class="collapse-item" href="#">BWA</a>
+                        <a class="collapse-item" href="{{ url('/fixed')}}">Fixed Licence</a>
                         <a class="collapse-item" href="#">ICH</a>
                         <a class="collapse-item" href="#">IGL</a>
                     </div>
@@ -103,47 +103,26 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
-                        <span class="badge badge-danger badge-counter">3</span>
+                        <span class="badge badge-danger badge-counter">{{count($notify)}}</span>
                             </a>
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
-                                    Message Center
+                                    Notifications
                                 </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src=""
-                                            alt="">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">SCANCOM VOL 1</div>
-                                        <div class="small text-gray-500">Gloria Aggrey · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src=""
-                                            alt="">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">HTG VOL 3</div>
-                                        <div class="small text-gray-500">Alfred Gaisie</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src=""
-                                            alt="">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">INTERNET SOLUTIONS VOL 2</div>
-                                        <div class="small text-gray-500">Kofi Ntim · 2d</div>
-                                    </div>
-                                </a>
+                                @foreach ($notify as $item)
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        {{-- <div class="dropdown-list-image mr-3"> --}}
+                                            <div class="status-indicator bg-danger"></div>
+                                        {{-- </div> --}}
+                                        <div>
+                                        <div class="text-truncate">{{$item->data['company_name']}}</div>
+                                            <div class="small text-gray-500">{{$item->data['expiry_date']}} · 58m</div>
+                                        </div>
+                                    </a>
+                                @endforeach
+
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
@@ -178,6 +157,7 @@
 
                 </nav>
                 <!-- End of Topbar -->
+                @include('sweetalert::alert')
 
                 <main class="py-4">
                     @yield('content')

@@ -15,7 +15,8 @@ class CreateDealersTable extends Migration
     {
         Schema::create('dealers', function (Blueprint $table) {
             $table->id('id');
-            $table->string('licence_id');
+            $table->string('licence_id')->nullable();
+            $table->foreignId('service_id');
             $table->string('company_name');
             $table->string('phone_1');
             $table->string('phone_2')->nullable();

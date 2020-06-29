@@ -4,12 +4,12 @@
      <div class="container">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800">Dealership Licence</h1>
+        <h1 class="h3 mb-2 text-gray-800">Fixed Licence Service</h1>
         <div class="row">
             <div class="col-sm-1">
             </div>
             <div class="col-sm-10">
-                {!!Form::open(['action'=> 'DealersController@store', 'method' => 'POST'])!!}
+                {!!Form::open(['action'=> 'FixedController@store', 'method' => 'POST'])!!}
                     <div class="form-group row">
                         <div class="col-sm-10">
                         {!! Form::label('l_id', 'Licence ID') !!}
@@ -24,8 +24,8 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-10">
-                        {!! Form::label('class', 'Class of Licence') !!}
-                        {{Form::select('class', ['A'=> 'Class A', 'B'=> 'Class B', 'C'=> 'Class C', 'D'=>'Class D'], null, ['placeholder' => 'Select Licence Class', 'class' => 'custom-select form-control'])}}
+                        {!! Form::label('class', 'Description') !!}
+                        {{Form::text('class', '', ['placeholder' => 'Description', 'class' => 'custom-select form-control', 'autocomplete' => 'on'])}}
                         </div>
                     </div>
                     <div class="form-group row">

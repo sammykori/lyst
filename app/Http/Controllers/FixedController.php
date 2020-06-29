@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Dealers;
 
-class DealersController extends Controller
+class FixedController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class DealersController extends Controller
      */
     public function index()
     {
-        $deal = Dealers::where('status', 'licenced')->where('service_id', 12)->get();
+        $deal = Dealers::where('status', 'licenced')->where('service_id', 1)->get();
 
-        return view('dealership.index')->with('deal', $deal);
+        return view('fixedservice.index')->with('deal', $deal);
     }
 
     /**
@@ -26,7 +26,7 @@ class DealersController extends Controller
      */
     public function create()
     {
-        return view('dealership.create');
+        return view('fixedservice.create');
     }
 
     /**
@@ -52,7 +52,7 @@ class DealersController extends Controller
         $record = new Dealers;
         $record->company_name = $request->input('name');
         $record->licence_id = $request->input('l_id');
-        $record->service_id = 12;
+        $record->service_id = 1;
         $record->email = $request->input('email');
         $record->class = $request->input('class');
         $record->phone_1 = $request->input('phone_1');
@@ -62,7 +62,7 @@ class DealersController extends Controller
         $record->expiry_date = $request->input('ex_date');
         $record->save();
 
-        return redirect('/dealers')->withSuccess('New requested submitted');
+        return redirect('/fixed')->withSuccess('New requested submitted');
     }
 
     /**
@@ -75,7 +75,7 @@ class DealersController extends Controller
     {
         $deal = Dealers::find($id);
 
-        return view('dealership.show')->with('deal', $deal);
+        return view('fixedservice.show')->with('deal', $deal);
     }
 
     /**
@@ -140,6 +140,6 @@ class DealersController extends Controller
             $deal->status = 'unlicenced';
             $deal->save();
         }
-        return redirect('/dealers')->withSuccess("Licence Revoke Successfully");
+        return redirect('/fixed')->withSuccess("Licence Revoke Successfully");
     }
 }

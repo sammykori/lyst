@@ -43,11 +43,11 @@ class RenewalNotify extends Notification
     {
         return (new MailMessage)
                     ->subject('RENEWAL OF LICENCE, LYST NOTIFICATION')
-                    ->greeting($this->dates->company_name. " Licence is almost up")
+                    ->greeting($this->dates->company_name. " Licence is almost due for renewal")
                     ->line('This is the Licence ID: '.$this->dates->licence_id)
                     ->line('The expiry date is '.$this->dates->expiry_date)
                     ->line('Click on the action button to view details')
-                    ->action('View', url('/pending'));
+                    ->action('View', url('/home'));
     }
 
     /**

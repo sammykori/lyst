@@ -63,6 +63,7 @@
             }
         </style>
     </head>
+
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -78,7 +79,7 @@
                     @endauth
                 </div>
             @endif
-
+            @include('sweetalert::alert')
             <div class="content">
                 <div class="title m-b-md">
                     Laravel

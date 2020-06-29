@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('layouts.lapp', function($view){
+            $view->with('notify', auth()->user()->unreadNotifications);
+        });
     }
 }
