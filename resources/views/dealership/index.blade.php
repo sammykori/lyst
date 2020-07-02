@@ -20,20 +20,20 @@
                 <thead>
                   <tr>
                     <th>Name of Company</th>
-                    <th>Email</th>
                     <th>Class</th>
-                    <th>Status</th>
+                    <th>Effective Date</th>
                     <th>Expiry Date</th>
+                    <th>Duration</th>
                     <th>More</th>
                   </tr>
                 </thead>
                 <tfoot>
                   <tr>
                     <th>Name of Company</th>
-                    <th>Email</th>
                     <th>Class</th>
-                    <th>Status</th>
+                    <th>Effective Date</th>
                     <th>Expiry Date</th>
+                    <th>Duration</th>
                     <th>More</th>
                   </tr>
                 </tfoot>
@@ -42,10 +42,10 @@
                         @foreach($deal as $deal)
                         <tr>
                             <td>{{$deal->company_name}}</td>
-                            <td>{{$deal->email}}</td>
                             <td>{{$deal->class}}</td>
-                            <td>{{$deal->status}}</td>
-                            <td>{{$deal->expiry_date}}</td>
+                            <td>{{date_format(date_create_from_format("Y-m-j",$deal->effect_date), "j F, Y")}}</td>
+                            <td>{{date_format(date_create_from_format("Y-m-j",$deal->expiry_date), "j F, Y")}}</td>
+                            <td>5 years</td>
                             <td><a href="/dealers/{{$deal->id}}" class="btn btn-sm btn-info shadow-sm">More</a></td>
                         </tr>
                         @endforeach

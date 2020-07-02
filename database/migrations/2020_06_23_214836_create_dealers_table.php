@@ -18,12 +18,14 @@ class CreateDealersTable extends Migration
             $table->string('licence_id')->nullable();
             $table->foreignId('service_id');
             $table->string('company_name');
-            $table->string('phone_1');
+            $table->string('phone_1')->nullable();
             $table->string('phone_2')->nullable();
-            $table->string('email');
-            $table->string('address');
+            $table->string('email')->nullable();
+            $table->string('address')->nullable();
+            $table->string('po_box')->nullable();
+            $table->string('digi_addr')->nullable();
             $table->string('status')->default('licenced');
-            $table->string('class');
+            $table->string('class')->nullable();
             $table->string('ren_count')->nullable()->default(0);
             $table->date('effect_date');
             $table->date('expiry_date');
