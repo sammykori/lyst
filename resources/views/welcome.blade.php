@@ -69,7 +69,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        <a href="#about" class="btn-get-started scrollto">Learn about Us</a>
       </div>
 
       <div class="row icon-boxes">
@@ -130,15 +130,14 @@
               the following roles:
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Generate Licence and Authorisation documents for approved services</li>
-              <li><i class="ri-check-double-line"></i> Enforce compliance of Licences and Authorisations by clients </li>
-              <li><i class="ri-check-double-line"></i> Maintain data on all issued licences and clients </li>
+              <li><i class="ri-check-double-line"></i> Develop new licences, authorisations and guidelines based on developments in the telecommunication market</li>
+              <li><i class="ri-check-double-line"></i> Grant licences and authorisations to various communication services upon approval by the Board or Director General</li>
+              <li><i class="ri-check-double-line"></i> Monitor and enforce conditions of licences / authorisations granted </li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
                 We allocate, assign, and regulate the use of telecommunication services in conformity with development strategies for the communications industry.
-                  We also monitor the frequency to identify cases of interference, and take action against illegal broadcasters and users of unauthorised wireless devices.
             </p>
             <a href="#services" class="btn-learn-more">Learn More</a>
           </div>
@@ -385,7 +384,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/team-4.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -403,7 +402,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -421,7 +420,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -439,7 +438,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>

@@ -42,6 +42,16 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-5">
+                        {!! Form::label('pobox', 'Post Office Box') !!}
+                        {{Form::text('pobox', '', ['class' => 'form-control', 'placeholder' => 'P.O Box CM123', 'autocomplete' => 'on'])}}
+                        </div>
+                        <div class="col-sm-5">
+                            {!! Form::label('digi', 'Ghana Post Digital Address') !!}
+                            {{Form::text('digi', '', ['class' => 'form-control', 'placeholder' => 'GL-124239', 'autocomplete' => 'on'])}}
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
                         {!! Form::label('phone_1', 'Phone Number 1') !!}
                         {{Form::text('phone_1', '', ['class' => 'form-control', 'placeholder' => '03011111111', 'autocomplete' => 'on'])}}
                         </div>

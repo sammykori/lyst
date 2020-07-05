@@ -10,12 +10,12 @@
             </div>
             <div class="col-sm-10">
                 {!!Form::open(['action'=> 'FixedController@store', 'method' => 'POST'])!!}
-                    <div class="form-group row">
+                    {{-- <div class="form-group row">
                         <div class="col-sm-10">
                         {!! Form::label('l_id', 'Licence ID') !!}
-                        {{Form::text('l_id', '', ['class' => 'form-control', 'placeholder' => 'DL907873227G21', 'autocomplete' => 'off'])}}
+                        {{Form::text('l_id', '', ['class' => 'form-control', 'placeholder' => 'FL907873227G21', 'autocomplete' => 'off'])}}
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="form-group row">
                         <div class="col-sm-10">
                         {!! Form::label('name', 'Name of Company') !!}
@@ -39,6 +39,16 @@
                         {!! Form::label('address', 'Physical Address') !!}
                         {{Form::text('address', '', ['class' => 'form-control', 'placeholder' => '911 Ring Road, Accra', 'autocomplete' => 'on'])}}
                         </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                        {!! Form::label('pobox', 'Post Office Box') !!}
+                        {{Form::text('pobox', '', ['class' => 'form-control', 'placeholder' => 'P.O Box CM123', 'autocomplete' => 'on'])}}
+                        </div>
+                        <div class="col-sm-5">
+                            {!! Form::label('digi', 'Ghana Post Digital Address') !!}
+                            {{Form::text('digi', '', ['class' => 'form-control', 'placeholder' => 'GL-124239', 'autocomplete' => 'on'])}}
+                            </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-5">

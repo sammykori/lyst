@@ -5,15 +5,13 @@
 
         <!-- Page Heading -->
         <h1 class="h3 mb-2 text-gray-800">Dealership Licence - Profile of {{$deal->company_name}}</h1>
-        {{-- {!!Form::open(['action' => ['DealersController@revoke', $deal->id],'method' => 'PUT'])!!}
-            {!! Form::submit('Revoke Dealers Licence', ['class'=> 'd-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right']) !!} --}}
-        {{-- <a href="{{url('dealers/create')}}" class="d-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right"><i class="fas fa-trash-alt fa-sm text-white-50"></i> Revoke Dealers Licence</a> --}}
-        {{-- {!!Form::close()!!} --}}
-        <form method="POST" action="{{action('DealersController@revoke')}}">
+
+        {{-- <form method="POST" action="{{action('DealersController@revoke')}}">
             @csrf
             <input type="hidden" id="custId" name="dealId" value={{$deal->id}}>
             <input type="submit" value="Revoke Licence" class="d-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right"/>
-        </form>
+        </form> --}}
+
         <br>
         <br>
         <div class="row">
@@ -50,6 +48,16 @@
                         {!! Form::label('address', 'Physical Address') !!}
                         {{Form::text('address', $deal->address, ['class' => 'form-control', 'placeholder' => $deal->address, 'autocomplete' => 'on'])}}
                         </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                        {!! Form::label('pobox', 'Post Office Box') !!}
+                        {{Form::text('pobox', $deal->po_box, ['class' => 'form-control', 'placeholder' => $deal->pobox, 'autocomplete' => 'on'])}}
+                        </div>
+                        <div class="col-sm-5">
+                            {!! Form::label('digi', 'Ghana Post Digital Address') !!}
+                            {{Form::text('digi', $deal->digi_addr, ['class' => 'form-control', 'placeholder' => $deal->digi_addr, 'autocomplete' => 'on'])}}
+                            </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-5">

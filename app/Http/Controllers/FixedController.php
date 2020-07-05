@@ -39,7 +39,6 @@ class FixedController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'l_id' => 'required',
             'class' => 'required',
             'email' => 'required',
             'address' => 'required',
@@ -58,6 +57,8 @@ class FixedController extends Controller
         $record->phone_1 = $request->input('phone_1');
         $record->phone_2 = $request->input('phone_2');
         $record->address = $request->input('address');
+        $record->po_box = $request->input('pobox');
+        $record->digi_addr = $request->input('digi');
         $record->effect_date = $request->input('eff_date');
         $record->expiry_date = $request->input('ex_date');
         $record->save();
@@ -107,6 +108,8 @@ class FixedController extends Controller
             "phone_1" => $request->input('phone_1'),
             "phone_2" => $request->input('phone_2'),
             "address" => $request->input('address'),
+            "po_box" => $request->input('pobox'),
+            "digi_addr" => $request->input('digi'),
             "effect_date" => $request->input('eff_date'),
             "expiry_date" => $request->input('ex_date')
         ]);
