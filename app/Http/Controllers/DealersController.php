@@ -42,11 +42,6 @@ class DealersController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'l_id' => 'required',
-            'class' => 'required',
-            'email' => 'required',
-            'address' => 'required',
-            'phone_1' => 'required',
             'eff_date' => 'required',
             'ex_date' => 'required',
         ]);

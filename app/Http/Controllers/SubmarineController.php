@@ -42,10 +42,6 @@ class SubmarineController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'class' => 'required',
-            'email' => 'required',
-            'address' => 'required',
-            'phone_1' => 'required',
             'eff_date' => 'required',
             'ex_date' => 'required',
         ]);
