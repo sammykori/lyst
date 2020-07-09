@@ -34,7 +34,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">LYST</a></h1>
+      <h1 class="logo mr-auto"><img src="../assets/img/nlogo.png" style="height: 100px"><a href="index.html">LYST</a></h1>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -137,7 +137,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-                We allocate, assign, and regulate the use of telecommunication services in conformity with development strategies for the communications industry.
+                We generate, administer and enforce all Licences / Authorisations under the Regulatory Administration for all approved telecommunication services in conformity with development strategies for the communications industry.
             </p>
             <a href="#services" class="btn-learn-more">Learn More</a>
           </div>
@@ -147,7 +147,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts section-bg">
+    {{-- <section id="counts" class="counts section-bg">
       <div class="container">
 
         <div class="row justify-content-end">
@@ -183,7 +183,7 @@
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section><!-- End Counts Section --> --}}
 
     <!-- ======= About Video Section ======= -->
     <section id="about-video" class="about-video">
@@ -212,7 +212,7 @@
                 </svg>
                 <i class="ri-phone-fill"></i>
               </div>
-              <h4><a href="">Fixed Access Licence</a></h4>
+              <h4><a href="">Fixed Line Services</a></h4>
               <p>The NCA grants this Licence to Licensees to establish and operate a nationwide Fixed Access Network.</p>
             </div>
           </div>
@@ -225,7 +225,7 @@
                 </svg>
                 <i class="ri-cellphone-fill"></i>
               </div>
-              <h4><a href="">Cellular Mobile Service</a></h4>
+              <h4><a href="">Cellular Mobile Services</a></h4>
               <p>A Licence for the provision of Second Generation mobile (2G) Technology for voice and Short Message Services (SMS) and data services.</p>
             </div>
           </div>
@@ -264,7 +264,7 @@
                 </svg>
                 <i class="ri-plug-2-fill"></i>
               </div>
-              <h4><a href="">Terrestrial Fibre Optic Infrastructure Licence</a></h4>
+              <h4><a href="">Terrestrial Fibre Network Licence</a></h4>
               <p>The deployment of fibre cable infrastructure to provide telecommunications services in a locality.</p>
             </div>
           </div>
@@ -303,7 +303,7 @@
                 </svg>
                 <i class="bx bx-water"></i>
               </div>
-              <h4><a href="">Submarine Cable</a></h4>
+              <h4><a href="">Submarine Cable Landing Station Licence</a></h4>
               <p>An electronic communications facility that house the electronics used to connect an international submarine cables and electronic communications services.</p>
             </div>
           </div>
@@ -316,7 +316,7 @@
                 </svg>
                 <i class="ri-base-station-fill"></i>
               </div>
-              <h4><a href="">Infrastructure (Masts & Towers)</a></h4>
+              <h4><a href="">Communications Tower Infrastructure Licence</a></h4>
               <p>A Licence to build and maintain passive communications infrastructure facilities for lease, rental or sale to Communications Services Operators licensed/registered /authorized by the NCA.</p>
             </div>
           </div>
@@ -375,7 +375,76 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
+          <h2>Management Team</h2>
+          <p>Our team is made up of savvy engineers and technologists who are passionate about team work in ensuring efficient service delivery</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Kofi Datsa</h4>
+                <span>Director, Regulatory Administration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="assetss/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Golda Adjei</h4>
+                <span>Deputy Director, Regulatory Administration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Isaac Boateng</h4>
+                <span>Deputy Director, Regulatory Administration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Licencing Team</h2>
           <p>Our team is made up of savvy engineers and technologists who are passionate about team work in ensuring efficient service delivery</p>
         </div>
 
@@ -447,13 +516,88 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Samuel M. Kori</h4>
-                <span>Software Developer</span>
+                <h4>Razak Salifu</h4>
+                <span>Assistant Manager</span>
               </div>
             </div>
           </div>
 
         </div>
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/team-4.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Henrietta Acquaye</h4>
+                  <span>Operations Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Kofi Ntim</h4>
+                  <span>Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Roland Kudozia</h4>
+                  <span>Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Ivy Hoetu</h4>
+                  <span>Deputy Manager</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
       </div>
     </section>

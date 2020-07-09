@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Dealers;
+use Illuminate\Support\Facades\DB;
+use App\Exports\FixedExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class FixedController extends Controller
 {
@@ -59,6 +62,7 @@ class FixedController extends Controller
         $record->address = $request->input('address');
         $record->po_box = $request->input('pobox');
         $record->digi_addr = $request->input('digi');
+        $record->user_id = auth()->user()->id;
         $record->effect_date = $request->input('eff_date');
         $record->expiry_date = $request->input('ex_date');
         $record->save();
@@ -74,9 +78,13 @@ class FixedController extends Controller
      */
     public function show($id)
     {
-        $deal = Dealers::find($id);
+        $deal =DB::table('dealers')
+        ->join('users', 'dealers.user_id', '=', 'users.id')
+        ->select('dealers.id','dealers.licence_id', 'dealers.company_name', 'dealers.phone_1', 'dealers.phone_2', 'dealers.address', 'dealers.digi_addr','dealers.po_box', 'dealers.email', 'dealers.class', 'dealers.effect_date', 'dealers.expiry_date', 'users.name','dealers.updated_at')
+        ->where('dealers.id',$id)
+        ->get();
 
-        return view('fixedservice.show')->with('deal', $deal);
+        return view('fixedservice.show')->with('deal', $deal[0]);
     }
 
     /**
@@ -144,5 +152,9 @@ class FixedController extends Controller
             $deal->save();
         }
         return redirect('/fixed')->withSuccess("Licence Revoke Successfully");
+    }
+    public function export()
+    {
+        return Excel::download(new FixedExport(), 'fixed.xlsx');
     }
 }

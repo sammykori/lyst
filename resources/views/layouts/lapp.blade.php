@@ -46,6 +46,15 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url('/home')}}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Dashboard</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
             <!-- Heading -->
@@ -54,7 +63,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
@@ -64,10 +73,19 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">List of tables</h6>
-                        <a class="collapse-item" href="{{ url('/dealers') }}">Dealership</a>
-                        <a class="collapse-item" href="{{ url('/fixed')}}">Fixed Licence</a>
-                        <a class="collapse-item" href="#">ICH</a>
-                        <a class="collapse-item" href="#">IGL</a>
+                        <a class="collapse-item" href="{{ url('/fixed')}}">Fixed Line</a>
+                        <a class="collapse-item" href="{{ url('/cellular')}}">Cellular Mobile / 2G</a>
+                        <a class="collapse-item" href="{{ url('/umts')}}">UMTS / 3G</a>
+                        <a class="collapse-item" href="{{ url('/bwa')}}">BWA</a>
+                        <a class="collapse-item" href="{{ url('/igl')}}">IGL</a>
+                        <a class="collapse-item" href="{{ url('/terrest')}}">Terrestrial Fibre Network</a>
+                        <a class="collapse-item" href="{{ url('/virtual')}}">Mobile Virtual Netork</a>
+                        <a class="collapse-item" href="{{ url('/iwcl')}}">IWCL</a>
+                        <a class="collapse-item" href="{{ url('/submarine')}}">Submarine</a>
+                        <a class="collapse-item" href="{{ url('/infras')}}">Infrastructure</a>
+                        <a class="collapse-item" href="{{ url('/ich')}}">ICH</a>
+                        <a class="collapse-item" href="{{ url('/vas')}}">VAS</a>
+                        <a class="collapse-item" href="{{ url('/dealers') }}">Dealers</a>
                     </div>
                 </div>
             </li>
@@ -195,6 +213,13 @@
     <!-- Page level custom scripts -->
     <script src="../assets/js/demo/datatables-demo.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../assets/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../assets/js/demo/chart-area-demo.js"></script>
+    <script src="../assets/js/demo/chart-pie-demo.js"></script>
 </body>
 
 </html>

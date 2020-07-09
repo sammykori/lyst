@@ -11,4 +11,8 @@ class Dealers extends Model
     public $primaryKey = 'id';
 
     public $timestamps = true;
+
+    public function users(){
+        return $this->belongsTo('App\User');
+    }
 }

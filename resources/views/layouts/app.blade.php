@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="../assetss/css/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -72,7 +73,7 @@
             </div>
         </nav>
         @include('sweetalert::alert')
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>

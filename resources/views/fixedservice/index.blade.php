@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-
+        <a href="{{ url('/fixed/export')}}" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm float-right"><i class="fas fa-download fa-sm text-white-50"></i> Download Excel</a>
       </div>
       <!-- /.container-fluid -->
     @endsection

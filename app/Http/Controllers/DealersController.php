@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Dealers;
+use Illuminate\Support\Facades\DB;
+use App\Exports\LicenceExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class DealersController extends Controller
 {
@@ -14,7 +17,7 @@ class DealersController extends Controller
      */
     public function index()
     {
-        $deal = Dealers::where('status', 'licenced')->where('service_id', 12)->get();
+        $deal = Dealers::where('status', 'licenced')->where('service_id', 13)->get();
 
         return view('dealership.index')->with('deal', $deal);
     }
@@ -52,7 +55,7 @@ class DealersController extends Controller
         $record = new Dealers;
         $record->company_name = $request->input('name');
         $record->licence_id = $request->input('l_id');
-        $record->service_id = 12;
+        $record->service_id = 13;
         $record->email = $request->input('email');
         $record->class = $request->input('class');
         $record->phone_1 = $request->input('phone_1');
@@ -60,6 +63,7 @@ class DealersController extends Controller
         $record->address = $request->input('address');
         $record->po_box = $request->input('pobox');
         $record->digi_addr = $request->input('digi');
+        $record->user_id = auth()->user()->id;
         $record->effect_date = $request->input('eff_date');
         $record->expiry_date = $request->input('ex_date');
         $record->save();
@@ -75,9 +79,13 @@ class DealersController extends Controller
      */
     public function show($id)
     {
-        $deal = Dealers::find($id);
+        $deal =DB::table('dealers')
+        ->join('users', 'dealers.user_id', '=', 'users.id')
+        ->select('dealers.id','dealers.licence_id', 'dealers.company_name', 'dealers.phone_1', 'dealers.phone_2', 'dealers.address', 'dealers.digi_addr','dealers.po_box', 'dealers.email', 'dealers.class', 'dealers.effect_date', 'dealers.expiry_date', 'users.name','dealers.updated_at')
+        ->where('dealers.id',$id)
+        ->get();
 
-        return view('dealership.show')->with('deal', $deal);
+        return view('dealership.show')->with('deal', $deal[0]);
     }
 
     /**
@@ -145,5 +153,10 @@ class DealersController extends Controller
             $deal->save();
         }
         return redirect('/dealers')->withSuccess("Licence Revoke Successfully");
+    }
+
+    public function export()
+    {
+        return Excel::download(new LicenceExport(), 'dealers.xlsx');
     }
 }

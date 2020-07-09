@@ -10,6 +10,11 @@
             <input type="hidden" id="custId" name="dealId" value={{$deal->id}}>
             <input type="submit" value="Revoke Licence" class="d-none d-sm-inline-block btn btn-lg btn-danger shadow-sm float-right"/>
         </form> --}}
+        <div class="float-right">
+            <p class="text-danger bg-white">Last Edit : {{$deal->name}}</p>
+            <p class="text-white bg-dark">{{$deal->updated_at}}</p>
+        </div>
+
         <br>
         <br>
         <div class="row">
@@ -50,7 +55,7 @@
                     <div class="form-group row">
                         <div class="col-sm-5">
                         {!! Form::label('pobox', 'Post Office Box') !!}
-                        {{Form::text('pobox', $deal->po_box, ['class' => 'form-control', 'placeholder' => $deal->pobox, 'autocomplete' => 'on'])}}
+                        {{Form::text('pobox', $deal->po_box, ['class' => 'form-control', 'placeholder' => $deal->po_box, 'autocomplete' => 'on'])}}
                         </div>
                         <div class="col-sm-5">
                             {!! Form::label('digi', 'Ghana Post Digital Address') !!}

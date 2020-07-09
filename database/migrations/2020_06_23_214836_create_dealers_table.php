@@ -27,6 +27,7 @@ class CreateDealersTable extends Migration
             $table->string('status')->default('licenced');
             $table->string('class')->nullable();
             $table->string('ren_count')->nullable()->default(0);
+            $table->foreignId('user_id')->constrained('users');
             $table->date('effect_date');
             $table->date('expiry_date');
             $table->timestamps();
