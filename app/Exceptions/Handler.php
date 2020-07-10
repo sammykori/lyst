@@ -53,6 +53,9 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if ($exception instanceof TokenMismatchException) {
+            return redirect('login')->with('message', 'An error message.');
+       }
         return parent::render($request, $exception);
     }
 

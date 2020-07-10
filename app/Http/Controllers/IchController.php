@@ -15,6 +15,10 @@ class IchController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $deal = Dealers::where('status', 'licenced')->where('service_id', 11)->get();
