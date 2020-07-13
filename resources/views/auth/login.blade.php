@@ -5,7 +5,7 @@
     <div class="row" style="height: 100px"></div>
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card">
+            <div class="card animate__animated animate__bounce animate__slow">
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

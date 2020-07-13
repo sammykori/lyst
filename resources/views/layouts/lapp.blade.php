@@ -10,6 +10,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link href="../assets/img/nlogo.png" rel="icon">
+    <link href="../assetss/img/nlogo.png" rel="apple-touch-icon">
+
     <title>Lyst</title>
 
     <!-- Custom fonts for this template-->

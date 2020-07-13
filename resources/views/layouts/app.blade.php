@@ -7,6 +7,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link href="../assets/img/nlogo.png" rel="icon">
+    <link href="../assetss/img/nlogo.png" rel="apple-touch-icon">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
