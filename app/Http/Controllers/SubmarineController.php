@@ -122,6 +122,7 @@ class SubmarineController extends Controller
             "address" => $request->input('address'),
             "po_box" => $request->input('pobox'),
             "digi_addr" => $request->input('digi'),
+            "user_id" => auth()->user()->id,
             "effect_date" => $request->input('eff_date'),
             "expiry_date" => $request->input('ex_date')
         ]);

@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="../assets/img/nlogo.png" rel="icon">
-  <link href="../assetss/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assetss/img/nlogo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -62,9 +62,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" style="height: 100px"></div>
       <div class="row justify-content-center">
-        <div class="col-xl-7 col-lg-9 text-center">
-          <h1>Licencing Database Licencin Database Licencing Notification System</h1>
+        <div class="col-md-12 col-xl-7 col-lg-9 text-center">
+          <h1>Licencing Notification System</h1>
           <h2>Improving Internal procedures for effective and efficient service delivery</h2>
         </div>
       </div>
