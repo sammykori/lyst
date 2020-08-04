@@ -385,7 +385,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/Datsa.jpg" class="img-fluid img-h" alt="">
+                <img src="assetss/img/team/datsa.jpg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
