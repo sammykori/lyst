@@ -385,7 +385,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/Datsa.jpg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -403,7 +403,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/golda.jpg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -421,7 +421,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/boat.jpg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -454,7 +454,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-4.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/jb.jpeg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -472,7 +472,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/kofi.jpg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -481,8 +481,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Barbara Ampomah</h4>
-                <span>Assistant Manager</span>
+                <h4>Kofi Ntim</h4>
+                <span>Manager</span>
               </div>
             </div>
           </div>
@@ -490,7 +490,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/roland.jpg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -499,8 +499,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Gloria K. Aggrey</h4>
-                <span>Officer</span>
+                <h4>Roland Kudozia</h4>
+                <span>Manager</span>
               </div>
             </div>
           </div>
@@ -508,7 +508,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
               <div class="member-img">
-                <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assetss/img/team/henty.jpeg" class="img-fluid img-h" alt="">
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
                   <a href=""><i class="icofont-facebook"></i></a>
@@ -517,8 +517,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Razak Salifu</h4>
-                <span>Assistant Manager</span>
+                <h4>Henrietta Acquaye</h4>
+                <span>Operations Manager</span>
               </div>
             </div>
           </div>
@@ -529,61 +529,7 @@
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
               <div class="member">
                 <div class="member-img">
-                  <img src="assetss/img/team/team-4.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Henrietta Acquaye</h4>
-                  <span>Operations Manager</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Kofi Ntim</h4>
-                  <span>Manager</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assetss/img/team/team-2.jpg" class="img-fluid" alt="">
-                  <div class="social">
-                    <a href=""><i class="icofont-twitter"></i></a>
-                    <a href=""><i class="icofont-facebook"></i></a>
-                    <a href=""><i class="icofont-instagram"></i></a>
-                    <a href=""><i class="icofont-linkedin"></i></a>
-                  </div>
-                </div>
-                <div class="member-info">
-                  <h4>Roland Kudozia</h4>
-                  <span>Manager</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-              <div class="member">
-                <div class="member-img">
-                  <img src="assetss/img/team/team-3.jpg" class="img-fluid" alt="">
+                  <img src="assetss/img/team/ivy.jpeg" class="img-fluid img-h" alt="">
                   <div class="social">
                     <a href=""><i class="icofont-twitter"></i></a>
                     <a href=""><i class="icofont-facebook"></i></a>
@@ -594,6 +540,60 @@
                 <div class="member-info">
                   <h4>Ivy Hoetu</h4>
                   <span>Deputy Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/barb.jpg" class="img-fluid img-h" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Barbara Ampomah</h4>
+                  <span>Assistant Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/razzy.jpeg" class="img-fluid img-h" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Razak Salifu</h4>
+                  <span>Assistant Manager</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+              <div class="member">
+                <div class="member-img">
+                  <img src="assetss/img/team/gigi.jpeg" class="img-fluid img-h" alt="">
+                  <div class="social">
+                    <a href=""><i class="icofont-twitter"></i></a>
+                    <a href=""><i class="icofont-facebook"></i></a>
+                    <a href=""><i class="icofont-instagram"></i></a>
+                    <a href=""><i class="icofont-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Gloria Aggrey</h4>
+                  <span>Officer</span>
                 </div>
               </div>
             </div>

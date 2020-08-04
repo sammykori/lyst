@@ -1924,3 +1924,7 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.img-h {
+    height: 350px;
+}
